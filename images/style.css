@@ -12,9 +12,8 @@ body {
   align-items: center;
   justify-content: center;
   width: 100vw;
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px); /* Adjust the value (e.g., 60px) as needed */
 }
-
 .container {
   display: flex;
   flex-direction: column;
@@ -22,13 +21,16 @@ body {
   background-color: #283e50;
   color: white;
   min-width: 320px;
-  width: 25vw;
+  width: 42vw;
   line-height: 1.5em;
   border-radius: 7px 7px 0 0;
 }
 
 .container .image {
   width: 100%;
+  background-size: contain; /* Use "contain" instead of "cover" */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  background-position: top center;
   border-radius: 7px 7px 0 0;
 }
 
