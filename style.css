@@ -2,11 +2,13 @@
   color: white;
   box-sizing: border-box;
 }
+
 body {
   background: linear-gradient(#615dad, #ffc8da) no-repeat;
   font-family: sans-serif;
   margin: 0;
 }
+
 .main-container {
   display: flex;
   width: 100vw;
@@ -14,6 +16,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .content-container {
   display: flex;
   flex-direction: column;
@@ -24,9 +27,11 @@ body {
   text-align: center;
   border-radius: 7px 7px 0 0;
 }
+
 .container {
   border-radius: 7px 7px 0 0;
 }
+
 .content-container .image {
   width: 100%;
   border-radius: 7px 7px 0 0;
@@ -77,44 +82,56 @@ h1 {
 .info {
   margin-bottom: 2em;
 }
+
 .game-container {
   flex-direction: column;
 }
+
 .player-info {
   display: flex;
   width: 100%;
   margin-bottom: .5em;
 }
-.player-info > div {
+
+.player-info>div {
   display: flex;
 }
+
 .title-game {
   margin-top: .1em;
 }
+
 .player-name {
   font-weight: bold;
 }
-.player-info > .left {
+
+.player-info>.left {
   width: 50%;
 }
-.left > p {
+
+.left>p {
   margin-right: 1em;
 }
+
 .right {
   margin-left: auto;
 }
+
 .right a {
   display: flex;
   border-radius: .5em;
   padding: .8em;
 }
+
 .home-icon {
   background-color: #1fcca4;
   margin-right: 1em;
 }
+
 .restart-icon {
   background-color: #0197f6;
 }
+
 .game-grid {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -126,13 +143,23 @@ h1 {
   background-color: rgba(255, 255, 255, 0.25);
   border: 1px solid black;
 }
+
 .box {
   background: none;
   border: 1px solid black;
   margin: 0;
   padding: 0;
 }
+
 .box:hover {
   background: rgba(255, 255, 255, 0.5);
   cursor: pointer;
+}
+
+.home-icon:hover {
+  background-color: #1cbb96;
+}
+
+.restart-icon:hover {
+  background-color: #0090e9;
 }
