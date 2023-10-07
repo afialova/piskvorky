@@ -152,7 +152,7 @@ h1 {
 }
 
 .box:hover {
-  background: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
 }
 
@@ -162,4 +162,32 @@ h1 {
 
 .restart-icon:hover {
   background-color: #0090e9;
+  cursor: pointer;
+}
+
+.no-field {
+  background-image: none;
+}
+@keyframes expandBackground {
+  0% {
+    background-size: 0% 0%;
+  }
+  100% {
+    background-size: 70% 70%;
+  }
+}
+.cross-field {
+  background-image: url("images/icons/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  animation: expandBackground 0.15s ease-in-out;
+}
+
+.circle-field {
+  background-image: url("images/icons/circle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  animation: expandBackground 0.15s ease-in-out;
 }

@@ -11,6 +11,7 @@
             rel="stylesheet"
     />
     <title>Piškvorky</title>
+    <script src="scripts/hra.js" type="module"></script>
 </head>
 <body>
     <div class="main-container">
@@ -21,7 +22,7 @@
             <div class="player-info">
                 <div class="left">
                     <p class="player-name">HRAJE:</p>
-                    <img class="player-icon" src="images/icons/circle.svg" alt="circle" />
+                    <img class="player-icon" src="images/icons/circle_white.svg" alt="circle" />
                 </div>
                 <div class="right">
                     <a href="index.html" class="home-icon">
@@ -33,106 +34,115 @@
                 </div>
             </div>
             <div class="game-grid">
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
+                <button class="box" id="0_0"></button>
+                <button class="box" id="0_1"></button>
+                <button class="box" id="0_2"></button>
+                <button class="box" id="0_3"></button>
+                <button class="box" id="0_4"></button>
+                <button class="box" id="0_5"></button>
+                <button class="box" id="0_6"></button>
+                <button class="box" id="0_7"></button>
+                <button class="box" id="0_8"></button>
+                <button class="box" id="0_9"></button>
+
+                <button class="box" id="1_0"></button>
+                <button class="box" id="1_1"></button>
+                <button class="box" id="1_2"></button>
+                <button class="box" id="1_3"></button>
+                <button class="box" id="1_4"></button>
+                <button class="box" id="1_5"></button>
+                <button class="box" id="1_6"></button>
+                <button class="box" id="1_7"></button>
+                <button class="box" id="1_8"></button>
+                <button class="box" id="1_9"></button>
+
+                <button class="box" id="2_0"></button>
+                <button class="box" id="2_1"></button>
+                <button class="box" id="2_2"></button>
+                <button class="box" id="2_3"></button>
+                <button class="box" id="2_4"></button>
+                <button class="box" id="2_5"></button>
+                <button class="box" id="2_6"></button>
+                <button class="box" id="2_7"></button>
+                <button class="box" id="2_8"></button>
+                <button class="box" id="2_9"></button>
+
+                <button class="box" id="3_0"></button>
+                <button class="box" id="3_1"></button>
+                <button class="box" id="3_2"></button>
+                <button class="box" id="3_3"></button>
+                <button class="box" id="3_4"></button>
+                <button class="box" id="3_5"></button>
+                <button class="box" id="3_6"></button>
+                <button class="box" id="3_7"></button>
+                <button class="box" id="3_8"></button>
+                <button class="box" id="3_9"></button>
+
+                <button class="box" id="4_0"></button>
+                <button class="box" id="4_1"></button>
+                <button class="box" id="4_2"></button>
+                <button class="box" id="4_3"></button>
+                <button class="box" id="4_4"></button>
+                <button class="box" id="4_5"></button>
+                <button class="box" id="4_6"></button>
+                <button class="box" id="4_7"></button>
+                <button class="box" id="4_8"></button>
+                <button class="box" id="4_9"></button>
+
+                <button class="box" id="5_0"></button>
+                <button class="box" id="5_1"></button>
+                <button class="box" id="5_2"></button>
+                <button class="box" id="5_3"></button>
+                <button class="box" id="5_4"></button>
+                <button class="box" id="5_5"></button>
+                <button class="box" id="5_6"></button>
+                <button class="box" id="5_7"></button>
+                <button class="box" id="5_8"></button>
+                <button class="box" id="5_9"></button>
+
+                <button class="box" id="6_0"></button>
+                <button class="box" id="6_1"></button>
+                <button class="box" id="6_2"></button>
+                <button class="box" id="6_3"></button>
+                <button class="box" id="6_4"></button>
+                <button class="box" id="6_5"></button>
+                <button class="box" id="6_6"></button>
+                <button class="box" id="6_7"></button>
+                <button class="box" id="6_8"></button>
+                <button class="box" id="6_9"></button>
+
+                <button class="box" id="7_0"></button>
+                <button class="box" id="7_1"></button>
+                <button class="box" id="7_2"></button>
+                <button class="box" id="7_3"></button>
+                <button class="box" id="7_4"></button>
+                <button class="box" id="7_5"></button>
+                <button class="box" id="7_6"></button>
+                <button class="box" id="7_7"></button>
+                <button class="box" id="7_8"></button>
+                <button class="box" id="7_9"></button>
+
+                <button class="box" id="8_0"></button>
+                <button class="box" id="8_1"></button>
+                <button class="box" id="8_2"></button>
+                <button class="box" id="8_3"></button>
+                <button class="box" id="8_4"></button>
+                <button class="box" id="8_5"></button>
+                <button class="box" id="8_6"></button>
+                <button class="box" id="8_7"></button>
+                <button class="box" id="8_8"></button>
+                <button class="box" id="8_9"></button>
+
+                <button class="box" id="9_0"></button>
+                <button class="box" id="9_1"></button>
+                <button class="box" id="9_2"></button>
+                <button class="box" id="9_3"></button>
+                <button class="box" id="9_4"></button>
+                <button class="box" id="9_5"></button>
+                <button class="box" id="9_6"></button>
+                <button class="box" id="9_7"></button>
+                <button class="box" id="9_8"></button>
+                <button class="box" id="9_9"></button>
             </div>
         </div>
     </div>
