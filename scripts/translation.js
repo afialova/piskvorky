@@ -1,6 +1,6 @@
 
 function loadLanguage(languageCode) {
-    fetch(`../${languageCode}.json`)
+    fetch(`https://afialova.github.io/piskvorky/${languageCode}.json`)
         .then(response => response.json())
         .then(translations => {
             updateContent(translations);
