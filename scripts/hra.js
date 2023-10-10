@@ -62,3 +62,4 @@ document.querySelector('.restart-icon').addEventListener('click',() => {
     currentPlayer = 'circle';
     playerImage.src = 'images/icons/circle_white.svg';
 });
+

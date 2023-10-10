@@ -10,30 +10,28 @@
       href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
       rel="stylesheet"
     />
-    <title>Piškvorky</title>
+    <title data-translate="main-title"></title>
     <style>
-
     </style>
+    <script src="scripts/translation.js" type="module"></script>
   </head>
   <body>
+    <div class="language-selection">
+      <img class="language-icon" src="images/icons/czech-flag.svg" alt="Čeština" data-lang="cs"/>
+      <img class="language-icon" src="images/icons/uk-flag.svg" alt="English" data-lang="en"/>
+    </div>
     <div class="main-container">
       <div class="content-container">
-        <img class="image" src="images/uvodni.jpg" title="uvodni" />
+        <img class="image" src="images/uvodni.jpg" title="uvodni" alt="preview"/>
         <header>
-          <h1 class="title">Piškvorky</h1>
+          <h1 class="title" data-translate="greeting"></h1>
         </header>
-        <p class="info_aboutgame">
-          Piškvorky jsou velmi oblíbená společenská hra pro dva hráče. Obvykle
-          se hraje s tužkou a čtverečkovaným papírem. Nyní můžete využít naši
-          skvělou aplikaci, takže už nepotřebujete ani tužku a nemusíte hledat
-          čtverečkovaný papír. Přejeme vám hodně zábavy!
+        <p class="info_aboutgame" data-translate="info-aboutgame">
         </p>
         <a
           class="button rules"
-          href="https://czechitas-podklady.cz/Piskvorky-pravidla/"
-          >Pravidla</a
-        >
-        <a class="button start" href="hra.html">Začít hrát</a>
+          href="https://czechitas-podklady.cz/Piskvorky-pravidla/" data-translate="button-rules"></a>
+        <a class="button start" href="hra.html" data-translate="button-start"></a>
       </div>
     </div>
   </body>

@@ -170,7 +170,7 @@ h1 {
 }
 @keyframes expandBackground {
   0% {
-    background-size: 0% 0%;
+    background-size: 0 0;
   }
   100% {
     background-size: 70% 70%;
@@ -191,3 +191,21 @@ h1 {
   background-size: 70%;
   animation: expandBackground 0.15s ease-in-out;
 }
+
+.language-selection {
+  position: absolute; /* Position the container absolutely */
+  top: 1em; /* Adjust top distance from the corner */
+  right: 1em; /* Adjust right distance from the corner */
+  display: flex;
+}
+
+/* Style for language icons */
+.language-icon {
+  width: 3em;
+  margin-left: 5px; /* Add some space between language icons */
+}
+
+.language-icon:hover {
+  filter: brightness(0.5);
+}
+

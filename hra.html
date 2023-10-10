@@ -10,18 +10,23 @@
             href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
             rel="stylesheet"
     />
-    <title>Piškvorky</title>
+    <title data-translate="main-title"></title>
     <script src="scripts/hra.js" type="module"></script>
+    <script src="scripts/translation.js" type="module"></script>
 </head>
 <body>
+    <div class="language-selection">
+        <img class="language-icon" src="images/icons/czech-flag.svg" alt="Čeština" data-lang="cs"/>
+        <img class="language-icon" src="images/icons/uk-flag.svg" alt="English" data-lang="en"/>
+    </div>
     <div class="main-container">
         <div class="game-container">
             <div class="heading">
-                <h1 class="title-game">Piškvorky</h1>
+                <h1 class="title-game" data-translate="greeting"></h1>
             </div>
             <div class="player-info">
                 <div class="left">
-                    <p class="player-name">HRAJE:</p>
+                    <p class="player-name" data-translate="next-player"></p>
                     <img class="player-icon" src="images/icons/circle_white.svg" alt="circle" />
                 </div>
                 <div class="right">
