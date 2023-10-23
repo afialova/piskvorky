@@ -1,14 +1,10 @@
 
-function loadLanguage(languageCode) {
-    fetch(`https://afialova.github.io/piskvorky/${languageCode}.json`)
-        .then(response => response.json())
-        .then(translations => {
-            updateContent(translations);
-        })
-        .catch(error => {
-            console.error('Error fetching translations:', error);
-        });
+const loadLanguage = async (languageCode) => {
+    const response = await fetch(`https://afialova.github.io/piskvorky/${languageCode}.json`)
+    const translations = await response.json()
+    updateContent(translations)
 }
+
 function updateContent(translations) {
     const contentElements = document.querySelectorAll('[data-translate]');
 
